@@ -1,8 +1,11 @@
 import './App.css';
+import Hero from './components/Hero/Hero';
+
+
 function App() {
   return (
     <div className="App">
-          <span style={{color: 'white'}}>This is React Responsive Gym Website</span>
+          <Hero/>
     </div>
   );
 }
