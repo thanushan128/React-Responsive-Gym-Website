@@ -4,6 +4,7 @@ import { Programs } from './components/Programs/Programs';
 import Plans from './components/Plans/Plans';
 import { Reasons } from './components/Reasons/Reasons';
 import Testimonials from './components/Testimonials/Testimonials';
+import { Join } from './components/Join/Join';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Reasons />
       <Plans />
       <Testimonials/>
+      <Join/>
     </div>
   );
 }
