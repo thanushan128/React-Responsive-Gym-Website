@@ -142,15 +142,16 @@
 .hero-image{
     position: absolute;
     top: 10rem;
-    right: 12rem;
+    right: 8rem;
     width: 23rem;
 }
 
 .hero-image-back{
     position: absolute;
-    top: 5rem;
-    right: 26rem;
+    top: 4rem;
+    right: 20rem;
     z-index: -1;
+    width: 15rem;
 }
 
 .calories{
@@ -162,7 +163,7 @@
     width: fit-content;
     position: absolute;
     top: 32rem;
-    right: 32rem;
+    right: 28rem;
 }
 
 .calories>img{
@@ -173,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 12rem;
+    /* width: 12rem; */
 }
 
 .calories>div>:nth-child(1){
@@ -189,4 +190,72 @@
     width: 22rem;
     height: 30rem;
     left: 0;
+}
+
+/* mobile response */
+@media screen and(max-width:768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero-blur{
+        width: 10rem;
+    }
+    .the-best-ad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .hero-text{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text>div:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .hero-buttons{
+        justify-content: center;
+    }
+    .figures>div>span:nth-child(1){
+        font-size: large;
+    }
+    .figures>div>span:nth-child(2){
+        font-size: small;
+    }
+    .heart-h{
+        position: relative;
+        background: none;
+    }
+    .heart-rate{
+        left: 1rem;
+        top: 2rem;
+    }
+    .calories{
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+    .calories>img{
+        width: 2rem;
+    }
+    .calories>div>:nth-child(2){
+        color: white;
+        font-size: 1rem;
+    }
+    .hero-image{
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .hero-image-back{
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    }
 }
